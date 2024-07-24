@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        gap: 50px;
+    }    
+    #titulo{
+        font-size: 40px;
+
+        color: white;
+    }
+    
+    #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #video video{
+        border-radius: 13px;
+        border: 2px solid white;
+    }
+
+    #decrição{
+        font-size: 250px;
+        color: white;
+    }
+
+    #decrição-txt{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin: 0px 60px 0px 60px;
+    }
+</style>
+
+<body>
+    <h1 id="titulo">Animação de Projeto de Vida</h1>
+    <section id="video">
+        <video width="65%" height="25%" controls>
+            <source src=".mp4" type="video/mp4">
+        </video>
+    </section>
+    <h1 id="titulo">Descrição</h1>
+    <h4 id="decrição-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur perspiciatis, quos error dolorum dolores saepe in reiciendis
+         earum voluptatibus ipsa assumenda nostrum vitae pariatur obcaecati non! Minima, tempore necessitatibus?</h4>
+</body>
+</html>
