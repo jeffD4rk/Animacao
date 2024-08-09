@@ -130,7 +130,7 @@
 }
 
 #info-pessoas{
-  width: 10%;
+    width: 10%;
     cursor: pointer;
     padding: 7px;
     margin: 10% 2%;
@@ -393,6 +393,19 @@
       color: white;
       font-size: 100px;
       font-family: sceptical;
+    }
+    #info-pessoas{
+      width: 80%;
+        cursor: pointer;
+        padding: 7px;
+        margin: 10% 2%;
+        display: flex;
+        border-radius: 8px;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid white;
+        overflow: hidden;
+        align-items: center;
     }
 
     #conteudo { 
