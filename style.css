@@ -120,7 +120,7 @@
     display: block;
     text-align: center;
     justify-content: start;
-    top: 1%;
+    top: 3%;
     margin-left: 7%;
     z-index: 1;justify-content: start;
     color: white;
@@ -129,6 +129,7 @@
   }
 
   #info-pessoas{
+    width: 10%;
       cursor: pointer;
       padding: 7px;
       margin: 10% 2%;
@@ -240,6 +241,30 @@
     align-items: center;
     top: 27%;
     flex-direction: column;
+  }
+  
+  @media  screen and (max-width:1746px) {
+    #btn{
+      z-index: 10;
+      position: fixed;
+      top: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #center-titulo{
+      display: flex;
+      z-index: 10;
+      top: 33%;
+      gap: 10px;
+      position: fixed;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    
+    }
   }
 
 
