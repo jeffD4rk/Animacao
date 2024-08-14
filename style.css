@@ -12,6 +12,7 @@
     height: 100vh;
     filter: brightness() opacity(30%);
     background-image: url(https://i.pinimg.com/originals/1a/5d/5b/1a5d5b2f6d034183c75fd4904cbcb63a.gif);
+    box-shadow: inset 750px 0px 11000000000000000000000099000000000px black;
   }
 
   @font-face {
@@ -36,7 +37,7 @@
     display: flex;
     text-decoration: none;
     font-size: 23px;
-    padding: 12px 37px;
+    padding: 15px 80px;
     border-radius: 7px;
     background-color: white;
     gap: 4px;
@@ -44,13 +45,15 @@
     color: black;
     font-weight: 900;
     cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.5s linear;
   }
   #creditos {
     text-align: center;
     display: flex;
     text-decoration: none;
     font-size: 20px;
-    padding: 12px 37px;
+    padding: 15px 80px;
     border-radius: 7px;
     color: white;
     background-color: transparent;
@@ -58,10 +61,17 @@
     gap: 4px;
     z-index:2;
     cursor: pointer;
+    font-weight: 900;
+    transition: all 0.5s linear;
   }
-  #creditos:hover,
+  #creditos:hover{
+    background-color: white;
+    color: black;
+  }
   #assistir:hover {
-    transform: scale(0.99);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
   }
   
 
@@ -153,7 +163,8 @@
   #inicio{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    z-index: 30;
+  
   }
 
   #sair {
@@ -235,7 +246,7 @@
   #btn{
     z-index: 10;
     position: fixed;
-    top: 55%;
+    top: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -258,6 +269,7 @@
       position: fixed;
       top: 50%;
       display: flex;
+      left: 3%;
       justify-content: space-around;
       align-items: center;
       gap: 20px;
@@ -266,11 +278,12 @@
     #center-titulo{
       display: flex;
       z-index: 10;
+      left: 3%;
       top: 33%;
       gap: 10px;
       position: fixed;
       justify-content: space-around;
-      align-items: center;
+      align-items: start;
       flex-direction: column;
     
     }
@@ -451,3 +464,10 @@
   }
 
   
+  #logo{
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    width: 10%;
+    z-index: 35;
+  }
